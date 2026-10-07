@@ -1,0 +1,8 @@
+[
+  {
+    "name": "local-good",
+    "url": "http://127.0.0.1:9100/hook/ok",
+    "secret": "local-secret-good",
+    "event_types": ["order.created", "order.paid"]
+  }
+]
