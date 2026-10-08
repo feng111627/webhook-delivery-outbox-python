@@ -1,0 +1,9 @@
+{
+  "database_path": "data/webhook.db",
+  "poll_interval": 0.1,
+  "http_timeout": 5.0,
+  "max_attempts": 5,
+  "base_delay": 1.0,
+  "max_delay": 60.0,
+  "timestamp_skew_seconds": 300
+}

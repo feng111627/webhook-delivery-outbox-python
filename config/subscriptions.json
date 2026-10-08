@@ -1,0 +1,34 @@
+{
+  "subscriptions": [
+    {
+      "name": "local-ok",
+      "url": "http://127.0.0.1:9100/hook/ok",
+      "secret": "receiver-local-secret-0123456789",
+      "event_types": ["order.created", "order.paid"]
+    },
+    {
+      "name": "local-flaky",
+      "url": "http://127.0.0.1:9100/hook/flaky",
+      "secret": "receiver-local-secret-0123456789",
+      "event_types": ["order.created"]
+    },
+    {
+      "name": "local-fail",
+      "url": "http://127.0.0.1:9100/hook/fail",
+      "secret": "receiver-local-secret-0123456789",
+      "event_types": ["order.paid"]
+    },
+    {
+      "name": "local-slow",
+      "url": "http://127.0.0.1:9100/hook/slow",
+      "secret": "receiver-local-secret-0123456789",
+      "event_types": ["order.created"]
+    },
+    {
+      "name": "local-badsecret",
+      "url": "http://127.0.0.1:9100/hook/badsecret",
+      "secret": "receiver-local-secret-0123456789",
+      "event_types": ["order.created"]
+    }
+  ]
+}

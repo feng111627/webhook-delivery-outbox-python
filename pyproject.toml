@@ -4,7 +4,19 @@ version = "0.1.0"
 requires-python = ">=3.14.4"
 dependencies = [
     "fastapi[standard]>=0.141.1",
+    "httpx>=0.28.0",
+    "uvicorn>=0.30.0",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.24.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
 
 [[tool.uv.index]]
 url = "https://mirrors.aliyun.com/pypi/simple/"
